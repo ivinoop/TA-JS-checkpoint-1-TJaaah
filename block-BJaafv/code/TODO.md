@@ -170,13 +170,18 @@ function isGreater(a,b) {
 Here, the obvious answer would be a YES or NO. Or, in terms of programming, TRUE or FALSE. So, a function name that appropriately describes this functionality is a good convention to follow.
 
 3. Spaces between operators
+4. Curly braces begin & end
+5. Uppercase for global variables
+
+Examples below:
 
 To make the code look neat and readable, spaces must be used wherever operators and variables are used.
 
 Example:
 
 ```js
-function printSum(numA) {
+const NUM = 99;   // Uppercase for global variables
+function printSum(numA) { // Function definition beginning; curly braces begin after function name and arguments, if any
   let sum = 0;
   for(let i = 0; i <= numA; i++) {   // Spaces between operators in for loop
     sum += i;
