@@ -60,11 +60,9 @@ function getOddSum(max = 10) {
 ```js
 function getProdcutOfDigits(num) {
   let prod = 1;
-  if(num < 0) {
-    return `Not a valid input`;
-  } else {
+  while(num > 0) {
     prod = prod * (num % 10);
-    num = num / 10;
+    num = Math.floor(num / 10);
   }
   return prod;
 }
